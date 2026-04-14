@@ -1,0 +1,24 @@
+people:
+  - key: wife
+    name: Надя
+    role: wife
+    contacts:
+      - platform: discord
+        id: ""
+    profile: family/wife/profile.md
+
+  - key: eva
+    name: Ева
+    role: daughter
+    contacts:
+      - platform: discord
+        id: ""
+    profile: family/eva/profile.md
+
+  - key: vera
+    name: Вера
+    role: daughter
+    contacts:
+      - platform: discord
+        id: ""
+    profile: family/vera/profile.md
