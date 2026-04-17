@@ -6,6 +6,7 @@ people:
       - platform: discord
         id: "1492860750169903135"
     profile: family/wife/profile.md
+    onboarding: family/wife/profile.md
 
   - key: eva
     name: Ева
