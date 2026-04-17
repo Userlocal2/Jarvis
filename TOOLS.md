@@ -47,4 +47,6 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Verified version: `2.1.80 (Claude Code)`
 - Default coding agent for this workspace when the user asks for a coding mode or Claude/Cloud Code style help
 - Preferred invocation pattern: `claude --permission-mode bypassPermissions --print '<task>'`
+- Hard rule: any real coding task, project creation, refactor, implementation, multi-file change, or code review must go through Claude Code by default unless Артем explicitly asks for a different agent
+- Exception: tiny direct edits are allowed only for obvious micro-fixes where spawning Claude Code would be slower than the fix itself
 - Use as an overlay for coding tasks only, not as a replacement for Jarwis's core identity, memory, or family-profile routing
