@@ -1,4 +1,12 @@
 people:
+  - key: artem
+    name: Артем
+    role: primary-user
+    contacts:
+      - platform: discord
+        id: "295625126047907840"
+    profile: profiles/artem.md
+
   - key: wife
     name: Надя
     role: wife
