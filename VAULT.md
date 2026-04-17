@@ -11,5 +11,6 @@
 
 ### 2026-04-17
 - Тип: Discord token для Sandbox bot-a
-- Значение: [REDACTED IN CHAT, stored locally by Jarwis]
-- Контекст: отдельный Discord bot token для sandbox voice-тестов.
+- Хранение: /root/.openclaw/secrets/discord-sandbox-bot-token.txt
+- Значение: [SECRET-FILE, не дублируется в vault]
+- Контекст: отдельный Discord bot token для sandbox voice-тестов; используется для повторной сборки и перенастройки sandbox после удаления.
