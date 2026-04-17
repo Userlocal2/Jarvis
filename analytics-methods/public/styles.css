@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+h1, h2 {
+  margin-top: 0;
+}
+.grid, .charts {
+  display: grid;
+  gap: 16px;
+}
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin: 20px 0;
+}
+.charts {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+.metric-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 14px;
+  line-height: 1.5;
+}
+canvas {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+}

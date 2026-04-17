@@ -1,0 +1,21 @@
+services:
+  openclaw-sandbox:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        OPENCLAW_VERSION: "2026.4.15"
+    container_name: openclaw-sandbox
+    restart: unless-stopped
+    environment:
+      OPENCLAW_HOME: /srv/openclaw/home
+      HOME: /srv/openclaw/home
+    ports:
+      - "18790:18790"
+    volumes:
+      - /root/openclaw-sandboxes/containerized/home:/srv/openclaw/home
+      - /root/openclaw-sandboxes/containerized/workspace:/srv/openclaw/workspace
+      - /root/openclaw-sandboxes/containerized/workspace/skills:/srv/openclaw/home/.openclaw/extensions:rw
+      - /root/.openclaw/secrets:/srv/openclaw/secrets:ro
+      - ./bin:/opt/openclaw-bootstrap/bin:ro
+    command: ["openclaw", "gateway", "run"]

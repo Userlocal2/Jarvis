@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics Methods Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Аналитические методы в Node.js</h1>
+    <p>Демо по корреляции, ковариации, регрессии, ANOVA, CAPM, анализу временных рядов и диагностике регрессии.</p>
+
+    <section id="summary" class="grid"></section>
+
+    <section class="card">
+      <h2>Ключевые показатели</h2>
+      <pre id="metrics"></pre>
+    </section>
+
+    <section class="charts">
+      <div class="card"><h2>Линейная регрессия</h2><canvas id="linearChart"></canvas></div>
+      <div class="card"><h2>Временной ряд</h2><canvas id="timeSeriesChart"></canvas></div>
+      <div class="card"><h2>Пространственный анализ</h2><canvas id="spatialChart"></canvas></div>
+      <div class="card"><h2>CAPM</h2><canvas id="capmChart"></canvas></div>
+      <div class="card"><h2>ANOVA по категориям</h2><canvas id="anovaChart"></canvas></div>
+      <div class="card"><h2>Остатки множественной регрессии</h2><canvas id="residualChart"></canvas></div>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
