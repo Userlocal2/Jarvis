@@ -41,12 +41,17 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ## Coding Mode
 
+### Coding User
+
+- Dedicated coding user created: `jarvis-code`
+- Home directory: `/home/jarvis-code`
+- Intended role: use this user for future coding-agent and project-writing work instead of root when possible
+- Project zone ACLs were granted on `/root/.openclaw/workspace/projects` for `jarvis-code`
+
 ### Claude Code
 
-- Installed locally: `/root/.local/bin/claude`
-- Verified version: `2.1.80 (Claude Code)`
-- Default coding agent for this workspace when the user asks for a coding mode or Claude/Cloud Code style help
-- Preferred invocation pattern: `claude --permission-mode bypassPermissions --print '<task>'`
-- Hard rule: any real coding task, project creation, refactor, implementation, multi-file change, or code review must go through Claude Code by default unless Артем explicitly asks for a different agent
-- Exception: tiny direct edits are allowed only for obvious micro-fixes where spawning Claude Code would be slower than the fix itself
-- Use as an overlay for coding tasks only, not as a replacement for Jarwis's core identity, memory, or family-profile routing
+- Installed for `jarvis-code` at: `/home/jarvis-code/.npm-global/bin/claude`
+- Verified version under `jarvis-code`: `2.1.113 (Claude Code)`
+- Current status: environment/user setup is prepared, but Claude Code workflow is not yet considered the active default until a reliable write/edit path is validated
+- Keep `jarvis-code` as the preferred user context for future coding work and coding-agent experiments
+- Use as an overlay for coding tasks only, not as a replacement for Jarvis's core identity, memory, or family-profile routing
