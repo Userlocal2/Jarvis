@@ -48,10 +48,7 @@ Add whatever helps you do your job. This is your cheat sheet.
 - Intended role: use this user for future coding-agent and project-writing work instead of root when possible
 - Project zone ACLs were granted on `/root/.openclaw/workspace/projects` for `jarvis-code`
 
-### Claude Code
+## Network / Addressing
 
-- Installed for `jarvis-code` at: `/home/jarvis-code/.npm-global/bin/claude`
-- Verified version under `jarvis-code`: `2.1.113 (Claude Code)`
-- Current status: environment/user setup is prepared, but Claude Code workflow is not yet considered the active default until a reliable write/edit path is validated
-- Keep `jarvis-code` as the preferred user context for future coding work and coding-agent experiments
-- Use as an overlay for coding tasks only, not as a replacement for Jarvis's core identity, memory, or family-profile routing
+- If an IP address is needed in replies, prefer the machine's local network (LAN) IP address by default.
+- Do not default to external/WAN IP unless explicitly asked.
