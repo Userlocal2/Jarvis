@@ -232,6 +232,7 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 - When any project information changes, update `projects/PROJECTS.yml` in the same work session.
 - Before answering factual questions about a project, check `projects/PROJECTS.yml` first, then verify against the project if needed.
 - Treat stale project metadata as something to fix, not something to work around silently.
+- Default main branch for repositories on this machine: `master`, unless explicitly requested otherwise.
 
 ## Make It Yours
 

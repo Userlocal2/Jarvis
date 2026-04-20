@@ -3,6 +3,7 @@ projects:
     version: 1
     purpose: "Шпаргалка по проектам в /root/.openclaw/workspace/projects"
     default_lan_host: "192.168.0.188"
+    default_main_branch: "master"
 
   list:
     - name: analytics-methods
@@ -46,14 +47,14 @@ projects:
       repository:
         has_git: false
 
-    - name: jarwis-client
-      path: "/root/.openclaw/workspace/projects/jarwis-client"
+    - name: jarvis-client
+      path: "/root/.openclaw/workspace/projects/jarvis-client"
       description: "Проектирование отдельного клиента для общения с Jarwis, ближе по UX к ChatGPT, чем Telegram"
       repository:
         has_git: true
         branch: "main"
       docs:
-        entrypoint: "/root/.openclaw/workspace/projects/jarwis-client/README.md"
+        entrypoint: "/root/.openclaw/workspace/projects/jarvis-client/README.md"
         files:
           - "00-overview.md"
           - "01-product-scope.md"
