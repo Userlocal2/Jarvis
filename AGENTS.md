@@ -226,6 +226,13 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Project Registry
+
+- Canonical project cheat sheet: `projects/PROJECTS.yml`.
+- When any project information changes, update `projects/PROJECTS.yml` in the same work session.
+- Before answering factual questions about a project, check `projects/PROJECTS.yml` first, then verify against the project if needed.
+- Treat stale project metadata as something to fix, not something to work around silently.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

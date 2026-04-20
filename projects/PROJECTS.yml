@@ -1,0 +1,57 @@
+projects:
+  meta:
+    version: 1
+    purpose: "Шпаргалка по проектам в /root/.openclaw/workspace/projects"
+    default_lan_host: "192.168.0.188"
+
+  list:
+    - name: analytics-methods
+      path: "/root/.openclaw/workspace/projects/analytics-methods"
+      description: "Node.js проект с базовыми аналитическими методами и браузерной визуализацией данных"
+      repository:
+        has_git: true
+        branch: "master"
+      run:
+        - "cd /root/.openclaw/workspace/projects/analytics-methods"
+        - "npm start"
+      stop:
+        - "Остановить процесс node src/server.js или связанный npm start"
+      scripts:
+        start: "node src/server.js"
+        analyze: "node src/analysis.js"
+        test: "node --test"
+        test:coverage: "node --test --experimental-test-coverage"
+      local_urls:
+        - "http://192.168.0.188:3000"
+        - "http://localhost:3000"
+      notes:
+        - "Есть .gitignore под Node.js"
+
+    - name: hello-world
+      path: "/root/.openclaw/workspace/projects/hello-world"
+      description: "Пока пустой или минимальный проект без оформленной структуры"
+      repository:
+        has_git: false
+
+    - name: jarwis-client
+      path: "/root/.openclaw/workspace/projects/jarwis-client"
+      description: "Проектирование отдельного клиента для общения с Jarwis, ближе по UX к ChatGPT, чем Telegram"
+      repository:
+        has_git: true
+        branch: "main"
+      docs:
+        entrypoint: "/root/.openclaw/workspace/projects/jarwis-client/README.md"
+        files:
+          - "00-overview.md"
+          - "01-product-scope.md"
+          - "02-client-app.md"
+          - "03-server-backend.md"
+          - "04-auth-and-users.md"
+          - "05-chat-sessions.md"
+          - "06-security.md"
+          - "07-delivery-plan.md"
+          - "08-subagent-task-breakdown.md"
+          - "09-open-questions.md"
+      notes:
+        - "Это пока не запускаемое приложение, а пакет проектной документации"
+        - "Внутри есть папка subagents/ с разбивкой ролей"

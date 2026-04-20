@@ -1,5 +1,6 @@
 projects/*
 !projects/
 !projects/README.md
+!projects/PROJECTS.yml
 
 memory/
