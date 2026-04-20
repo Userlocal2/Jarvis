@@ -7,25 +7,38 @@ projects:
   list:
     - name: analytics-methods
       path: "/root/.openclaw/workspace/projects/analytics-methods"
-      description: "Node.js проект с базовыми аналитическими методами и браузерной визуализацией данных"
+      description: "Node.js проект с базовыми аналитическими методами и браузерной визуализацией данных, запускаемый локально или через Docker Compose"
       repository:
         has_git: true
         branch: "master"
       run:
         - "cd /root/.openclaw/workspace/projects/analytics-methods"
-        - "npm start"
+        - "docker compose up -d"
       stop:
-        - "Остановить процесс node src/server.js или связанный npm start"
+        - "cd /root/.openclaw/workspace/projects/analytics-methods"
+        - "docker compose down"
       scripts:
         start: "node src/server.js"
         analyze: "node src/analysis.js"
         test: "node --test"
         test:coverage: "node --test --experimental-test-coverage"
+        docker:build: "docker compose build"
+        docker:up: "docker compose up -d"
+        docker:down: "docker compose down"
+        docker:logs: "docker compose logs -f"
+        docker:test: "docker compose run --rm analytics-methods npm test"
+      tests:
+        container:
+          - "docker compose run --rm analytics-methods npm test"
       local_urls:
         - "http://192.168.0.188:3000"
         - "http://localhost:3000"
+      public_urls:
+        - "https://analytics.userlocal.app/"
       notes:
         - "Есть .gitignore под Node.js"
+        - "Основной способ запуска теперь через Docker Compose"
+        - "Контейнер после настройки можно оставлять постоянно включённым"
 
     - name: hello-world
       path: "/root/.openclaw/workspace/projects/hello-world"
