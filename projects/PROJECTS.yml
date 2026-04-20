@@ -12,6 +12,7 @@ projects:
       repository:
         has_git: true
         branch: "master"
+        remote: "git@github.com:Userlocal2/analytics-methods.git"
       run:
         - "cd /root/.openclaw/workspace/projects/analytics-methods"
         - "docker compose up -d"
@@ -49,10 +50,11 @@ projects:
 
     - name: jarvis-client
       path: "/root/.openclaw/workspace/projects/jarvis-client"
-      description: "Проектирование отдельного клиента для общения с Jarwis, ближе по UX к ChatGPT, чем Telegram"
+      description: "Проектирование отдельного клиента для общения с Jarvis, ближе по UX к ChatGPT, чем Telegram"
       repository:
         has_git: true
-        branch: "main"
+        branch: "master"
+        remote: "git@github.com:Userlocal2/jarvis-client.git"
       docs:
         entrypoint: "/root/.openclaw/workspace/projects/jarvis-client/README.md"
         files:
